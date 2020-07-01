@@ -6,6 +6,14 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateUsersTable extends Migration
 {
+/**
+* The table associated with the model.
+*
+* @var string
+*/
+protected $table = 'user';
+
+
     /**
      * Run the migrations.
      *

@@ -1,3 +1,4 @@
+#cmsに元からあったignoreの記載
 /node_modules
 /public/hot
 /public/storage
@@ -10,3 +11,33 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+
+#以下は半田が追記したignore---------------------------------
+
+#Macの自動生成ファイルを無視する記述
+.DS_Store
+
+#Windowsの自動生成ファイルを無視する記述
+Thumbs.db
+
+#Laravel用のignoreテンプレートを記述：参考（https://co.bsnws.net/article/300)
+vendor/
+node_modules/
+npm-debug.log
+
+# Laravel 4 specific
+bootstrap/compiled.php
+app/storage/
+
+# Laravel 5 & Lumen specific
+public/storage
+public/hot
+storage/*.key
+.env.*.php
+.env.php
+.env
+Homestead.yaml
+Homestead.json
+
+# Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
+.rocketeer/
